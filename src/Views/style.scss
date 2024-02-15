@@ -1,0 +1,76 @@
+.maincont {
+  min-height: calc(100vh - 16px);
+  background-color: #000;
+  .appbar {
+    background: #494949;
+    display: flex;
+    .toolbar {
+      width: 100%;
+      gap: 12px;
+      .logotext {
+        margin: 0;
+        color: #f473ff;
+        font-weight: 1000;
+        letter-spacing: 0.4px;
+        font-size: 16px;
+      }
+    }
+  }
+  .langcont {
+    .langtext {
+      letter-spacing: 4px;
+      font-weight: 800;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  .infoshow {
+    padding: 8px;
+    .infotext {
+      letter-spacing: 4px;
+      font-weight: 800;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .mobilenum {
+      letter-spacing: 4px;
+      font-weight: 1000;
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+    .mobilenumbutton {
+      letter-spacing: 4px;
+      font-weight: 1000;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+#id {
+  position: relative;
+  opacity: 0.99;
+}
+
+#id::before {
+  content: '';
+  position: absolute;
+  width: calc(100vw - 16px);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.226),
+      rgba(255, 255, 255, 0.534)
+    ),
+    url(https://i.etsystatic.com/18311546/r/il/5dfbc3/1661204064/il_1080xN.1661204064_diz9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: calc(100vh - 16px);
+  opacity: 0.5;
+  z-index: -1;
+}
